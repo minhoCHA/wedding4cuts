@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" preserveAspectRatio="none">
+  <!-- Outer border -->
+  <rect x="6" y="6" width="788" height="888" stroke="#c9a050" stroke-width="2.5" fill="none" rx="2"/>
+  <!-- Inner border -->
+  <rect x="14" y="14" width="772" height="872" stroke="#c9a050" stroke-width="1" fill="none" rx="1" stroke-dasharray="6 4"/>
+
+  <!-- Top-left floral corner -->
+  <g opacity="0.85">
+    <path d="M14,60 Q14,14 60,14" stroke="#c9a050" stroke-width="1.5" fill="none"/>
+    <circle cx="14" cy="14" r="3" fill="#c9a050"/>
+    <ellipse cx="37" cy="37" rx="6" ry="9" fill="none" stroke="#c9a050" stroke-width="1" transform="rotate(-45 37 37)"/>
+    <circle cx="37" cy="37" r="2" fill="#c9a050" opacity="0.6"/>
+  </g>
+
+  <!-- Top-right floral corner -->
+  <g opacity="0.85" transform="translate(800,0) scale(-1,1)">
+    <path d="M14,60 Q14,14 60,14" stroke="#c9a050" stroke-width="1.5" fill="none"/>
+    <circle cx="14" cy="14" r="3" fill="#c9a050"/>
+    <ellipse cx="37" cy="37" rx="6" ry="9" fill="none" stroke="#c9a050" stroke-width="1" transform="rotate(-45 37 37)"/>
+    <circle cx="37" cy="37" r="2" fill="#c9a050" opacity="0.6"/>
+  </g>
+
+  <!-- Bottom-left floral corner -->
+  <g opacity="0.85" transform="translate(0,900) scale(1,-1)">
+    <path d="M14,60 Q14,14 60,14" stroke="#c9a050" stroke-width="1.5" fill="none"/>
+    <circle cx="14" cy="14" r="3" fill="#c9a050"/>
+    <ellipse cx="37" cy="37" rx="6" ry="9" fill="none" stroke="#c9a050" stroke-width="1" transform="rotate(-45 37 37)"/>
+    <circle cx="37" cy="37" r="2" fill="#c9a050" opacity="0.6"/>
+  </g>
+
+  <!-- Bottom-right floral corner -->
+  <g opacity="0.85" transform="translate(800,900) scale(-1,-1)">
+    <path d="M14,60 Q14,14 60,14" stroke="#c9a050" stroke-width="1.5" fill="none"/>
+    <circle cx="14" cy="14" r="3" fill="#c9a050"/>
+    <ellipse cx="37" cy="37" rx="6" ry="9" fill="none" stroke="#c9a050" stroke-width="1" transform="rotate(-45 37 37)"/>
+    <circle cx="37" cy="37" r="2" fill="#c9a050" opacity="0.6"/>
+  </g>
+
+  <!-- Top center ornament -->
+  <g transform="translate(400,14)">
+    <line x1="-80" y1="0" x2="-20" y2="0" stroke="#c9a050" stroke-width="1"/>
+    <line x1="20" y1="0" x2="80" y2="0" stroke="#c9a050" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="12" ry="5" fill="none" stroke="#c9a050" stroke-width="1"/>
+    <circle cx="0" cy="0" r="2.5" fill="#c9a050"/>
+  </g>
+
+  <!-- Bottom text area -->
+  <rect x="14" y="824" width="772" height="62" fill="rgba(255,255,255,0.88)"/>
+  <line x1="60" y1="827" x2="740" y2="827" stroke="#c9a050" stroke-width="0.8"/>
+
+  <!-- Wedding text -->
+  <text x="400" y="852" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="20" fill="#7a5c10" letter-spacing="3">
+    Minho &amp; Claire
+  </text>
+  <text x="400" y="875" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13" fill="#9a7530" letter-spacing="1.5">
+    October 17, 2026  ·  Samcheonggak
+  </text>
+</svg>
