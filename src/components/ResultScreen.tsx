@@ -117,13 +117,16 @@ export default function ResultScreen({ clips, onRetake }: Props) {
     setUploading(true)
     try {
       const id = crypto.randomUUID()
-      await Promise.all(
+      const uploadResults = await Promise.all(
         clips.map((blob, i) =>
           supabase.storage
             .from('wedding-clips')
             .upload(`${id}/clip_${i}.webm`, blob, { contentType: 'video/webm' })
         )
       )
+      const uploadError = uploadResults.find(result => result.error)?.error
+      if (uploadError) throw uploadError
+
       const { error } = await supabase
         .from('sessions')
         .insert({ id, filter: FILTERS[filterIdx].name })
@@ -132,7 +135,8 @@ export default function ResultScreen({ clips, onRetake }: Props) {
       setQrUrl(`${origin}/download/${id}`)
     } catch (err) {
       console.error(err)
-      alert('Upload failed — check Supabase config in .env.local')
+      const message = err instanceof Error ? err.message : 'Unknown upload error'
+      alert(`Upload failed: ${message}`)
     } finally {
       setUploading(false)
     }
